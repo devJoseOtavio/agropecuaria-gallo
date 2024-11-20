@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* Reset e base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  padding: 40px 0;
+  width: 100%;
+  background-color: blueviolet;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('https://img.freepik.com/fotos-gratis/processo-de-barbear-cachorro-pequeno-se-senta-na-mesa-cao-rapado-por-um-profissional_1157-48808.jpg?t=st=1732121491~exp=1732125091~hmac=fd519fe252f80d0496b3646a669f188de1140765b191d88f5b3e1f1f66a0e806&w=996');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item-menu a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-menu a:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin:10px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items-form {
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.items-form input {
+  width: 48%;
+  height: 30px;
+  margin: 8px 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  transition: background-color 0.3s ease, cursor 0.3s ease;
+}
+
+.items-form input[type=submit] {
+  width: 98%;
+  height: 35px;
+}
+
+.items-form input:hover {
+  background-color: #f0f0f0f3;
+  cursor: pointer; 
+}
+
+.form h2 {
+  text-transform: uppercase;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 768px) {
+  .items-form input[type=text] {
+    width: 100%;
   }
 }
