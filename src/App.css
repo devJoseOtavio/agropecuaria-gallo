@@ -83,13 +83,22 @@ body {
 }
 
 .items-form input {
-  width: 48%;
-  height: 30px;
-  margin: 8px 0px;
-  border-radius: 5px;
+  width: 100%; 
+  height: 40px; 
+  font-size: 16px; 
+  margin: 10px 0;
   border: 1px solid #ccc;
-  padding: 5px;
-  transition: background-color 0.3s ease, cursor 0.3s ease;
+  padding: 10px;
+}
+
+input[type="date"] {
+  appearance: none;
+  background-color: #fff; 
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .items-form input[type=submit] {
@@ -159,10 +168,17 @@ body {
   background-color: #0056b3;
 }
 
+input::placeholder {
+  color: #aaa; 
+  font-style: italic; 
+}
+
 @media screen and (max-width: 768px) {
-  .items-form input[type=text] {
+  .items-form input {
     width: 100%;
+    margin: 10px 0;
   }
 }
+
 
 .content-single{width: 100%;}

@@ -18,7 +18,7 @@ function Produtos() {
       <div className="produtos-grid">
         {images.map((image, index) => (
           <div key={index} className="produtos-card">
-            <img src={image.src} />
+            <img src={image.src} alt={`Produto ${index + 1}`} />
           </div>
         ))}
       </div>

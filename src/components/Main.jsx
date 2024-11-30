@@ -53,13 +53,6 @@ function Main() {
                 onChange={(e) => setData(e.target.value)} 
                 required 
               />
-              <input 
-                placeholder="Hora" 
-                type="time" 
-                value={hora} 
-                onChange={(e) => setHora(e.target.value)} 
-                required 
-              />
               <input type="submit" value="Enviar" />
             </div>
           </form>
