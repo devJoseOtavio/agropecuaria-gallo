@@ -39,8 +39,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0",
-    "homepage": "https://devjoseotavio.github.io/agropecuaria-gallo"
-
-  }
+    "gh-pages": "^6.2.0"
+  },
+  "homepage": "https://devJoseOtavio.github.io/agropecuaria-gallo"
 }
