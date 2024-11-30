@@ -2,15 +2,25 @@ import React, { useState } from 'react';
 
 function Main() {
   const [nome, setNome] = useState('');
-  const [interesse, setInteresse] = useState('');
+  const [data, setData] = useState('');
+  const [hora, setHora] = useState('');
   
   const whatsappNumber = '5547988509407';
+
+  const formatDate = (date) => {
+    const [year, month, day] = date.split('-');
+    return `${day}/${month}/${year}`;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const message = encodeURIComponent(`Olá, meu nome é ${nome} e estou interessado em: ${interesse}.`);
-
+    const formattedDate = formatDate(data);
+    
+    const message = encodeURIComponent(
+      `Olá, meu nome é ${nome} e gostaria de agendar um banho para o meu pet no dia ${formattedDate} às ${hora}.`
+    );
+    
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
     window.open(whatsappLink, '_blank');
@@ -26,7 +36,7 @@ function Main() {
         </div>
 
         <div className="form">
-          <h2>Entre em Contato!</h2>
+          <h2>Agende o Banho do seu Pet!</h2>
           <form onSubmit={handleSubmit}>
             <div className="items-form">
               <input 
@@ -34,12 +44,21 @@ function Main() {
                 type="text" 
                 value={nome} 
                 onChange={(e) => setNome(e.target.value)} 
+                required 
               />
               <input 
-                placeholder="O que você busca?" 
-                type="text" 
-                value={interesse} 
-                onChange={(e) => setInteresse(e.target.value)} 
+                placeholder="Data" 
+                type="date" 
+                value={data} 
+                onChange={(e) => setData(e.target.value)} 
+                required 
+              />
+              <input 
+                placeholder="Hora" 
+                type="time" 
+                value={hora} 
+                onChange={(e) => setHora(e.target.value)} 
+                required 
               />
               <input type="submit" value="Enviar" />
             </div>

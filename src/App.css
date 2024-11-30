@@ -78,7 +78,7 @@ body {
   max-width: 540px;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
