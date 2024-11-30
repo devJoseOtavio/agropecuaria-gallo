@@ -31,7 +31,10 @@ function Localizacao() {
           ></iframe>
         </div>
         <div className="image-section">
-          <img src="/img/local.jpg" alt="Localização da Agropecuária e Petshop Gallo" />
+          <img 
+            src={process.env.PUBLIC_URL + '/img/local.jpg'} 
+            alt="Localização da Agropecuária e Petshop Gallo" 
+          />
         </div>
       </section>
     </div>

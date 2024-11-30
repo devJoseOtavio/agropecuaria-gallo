@@ -27,7 +27,7 @@ function QuemSomos() {
           </p>
         </div>
         <div className="image-section">
-          <img src="/img/gilmar.jpg" alt="Gilmar da Agropecuária e Petshop Gallo" />
+          <img src={process.env.PUBLIC_URL + '/img/gilmar.jpg'} alt="Gilmar da Agropecuária e Petshop Gallo" />
         </div>
       </section>
     </div>

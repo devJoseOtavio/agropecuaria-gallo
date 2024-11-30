@@ -4,12 +4,12 @@ import './Portfolio.css';
 
 function Portfolio() {
   const imagens = [
-    '/img/lavando.jpg',
-    '/img/lavando2.jpg',
-    '/img/lavando3.jpg',
-    '/img/lavando4.jpg',
+    process.env.PUBLIC_URL + '/img/lavando.jpg',
+    process.env.PUBLIC_URL + '/img/lavando2.jpg',
+    process.env.PUBLIC_URL + '/img/lavando3.jpg',
+    process.env.PUBLIC_URL + '/img/lavando4.jpg',
   ];
-
+  
   return (
     <div className="portfolio-container">
       <Link to="/">
