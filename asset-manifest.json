@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/agropecuaria-gallo/static/css/main.d20e6b55.css",
+    "main.css": "/agropecuaria-gallo/static/css/main.7146ce7b.css",
     "main.js": "/agropecuaria-gallo/static/js/main.0539bea0.js",
     "index.html": "/agropecuaria-gallo/index.html",
-    "main.d20e6b55.css.map": "/agropecuaria-gallo/static/css/main.d20e6b55.css.map",
+    "main.7146ce7b.css.map": "/agropecuaria-gallo/static/css/main.7146ce7b.css.map",
     "main.0539bea0.js.map": "/agropecuaria-gallo/static/js/main.0539bea0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d20e6b55.css",
+    "static/css/main.7146ce7b.css",
     "static/js/main.0539bea0.js"
   ]
 }
