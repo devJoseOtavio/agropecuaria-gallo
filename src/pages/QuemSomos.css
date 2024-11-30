@@ -1,56 +1,69 @@
 .quem-somos-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .back-button {
-    margin: 0 auto;
-    padding: 12px 24px;
-    cursor: pointer;
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    outline: none;
-  }
-  
-  .back-button:hover {
-    background-color: #e74c3c;
-    transform: translateY(-2px);
-  }
-  
-  .quem-somos-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin: 20px 0;
-  }
-  
+  padding: 20px;
+  text-align: center;
+}
+
+.back-button {
+  margin: 0 auto;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.back-button:hover {
+  background-color: #e74c3c;
+  transform: translateY(-2px);
+}
+
+.quem-somos-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.quem-somos-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 20px;
+}
+
+.text-section {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  flex: 1 1 300px;
+}
+
+@media screen and (max-width: 768px) {
   .quem-somos-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 30px;
-    padding: 20px;
+      flex-direction: column;
+      text-align: center;
   }
-  
+
   .text-section {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-    text-align: justify;
+      text-align: justify;
   }
-  
-  .image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
+}
