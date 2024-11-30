@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Produtos() {
   const images = [
-    { src: '/img/catalogo.jpg' },
-    { src: '/img/estoque.jpg' },
-    { src: '/img/estoque2.jpg' },
-    { src: '/img/estoque3.jpg' },
+    { src: process.env.PUBLIC_URL + '/img/catalogo.jpg' },
+    { src: process.env.PUBLIC_URL + '/img/estoque.jpg' },
+    { src: process.env.PUBLIC_URL + '/img/estoque2.jpg' },
+    { src: process.env.PUBLIC_URL + '/img/estoque3.jpg' },
   ];
-
+  
   return (
     <div className="produtos-container">
       <Link to="/">
