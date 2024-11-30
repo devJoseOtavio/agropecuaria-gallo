@@ -64,7 +64,6 @@
   margin-top: 20px;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 768px) {
   .localizacao-header h1 {
       font-size: 2rem;

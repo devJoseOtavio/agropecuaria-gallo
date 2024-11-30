@@ -18,7 +18,12 @@ function Localizacao() {
           </p>
           <p>Venha nos visitar e conhecer nossos produtos e serviços!</p>
         </div>
-
+        <div className="image-section">
+          <img 
+            src={process.env.PUBLIC_URL + '/img/local.jpg'} 
+            alt="Localização da Agropecuária e Petshop Gallo" 
+          />
+        </div>
         <div className="map-section">
           <iframe
             title="Mapa Localização Agropecuária e Petshop Gallo"
@@ -29,12 +34,6 @@ function Localizacao() {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-        </div>
-        <div className="image-section">
-          <img 
-            src={process.env.PUBLIC_URL + '/img/local.jpg'} 
-            alt="Localização da Agropecuária e Petshop Gallo" 
-          />
         </div>
       </section>
     </div>
