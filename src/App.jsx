@@ -1,7 +1,7 @@
 import './App.css';
 import Main from './components/Main';
 import Content from './components/Content';
-import { HashRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom'; // Alterado para HashRouter
+import { HashRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import Produtos from './pages/Produtos';
 import Portfolio from './pages/Portfolio';
 import QuemSomos from './pages/QuemSomos';
